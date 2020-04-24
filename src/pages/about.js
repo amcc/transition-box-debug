@@ -2,11 +2,11 @@ import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from "../components/navigation/seo"
 
 const IndexPage = props => (
-  <Layout {...props}>
+  <>
     <SEO title="Home" />
     <h1>About transition site</h1>
     <p>
@@ -17,7 +17,7 @@ const IndexPage = props => (
       vape, fingerstache umami scenester hoodie aesthetic snackwave glossier
       90's.
     </p>
-  </Layout>
+  </>
 )
 
 export default IndexPage

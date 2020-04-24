@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import Image from "../components/image"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from "../components/navigation/seo"
 
 const IndexPage = props => (
-  <Layout {...props}>
+  <>
     <SEO title="Home" />
     <h1>transition box</h1>
     <p>
@@ -20,7 +20,7 @@ const IndexPage = props => (
       twee polaroid. Retro palo santo narwhal pour-over.
     </p>
     <Image />
-  </Layout>
+  </>
 )
 
 export default IndexPage

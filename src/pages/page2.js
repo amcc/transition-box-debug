@@ -2,11 +2,11 @@ import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from "../components/navigation/seo"
 
 const Page2 = props => (
-  <Layout {...props}>
+  <>
     <SEO title="Home" />
     <h1>Page two</h1>
     <p>
@@ -18,7 +18,7 @@ const Page2 = props => (
       gochujang palo santo pok pok meditation chartreuse yr drinking vinegar.
       Normcore tumblr af, organic readymade blue bottle copper mug franzen.
     </p>
-  </Layout>
+  </>
 )
 
 export default Page2

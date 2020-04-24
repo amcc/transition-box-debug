@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 /** @jsx jsx */
 import { jsx, ThemeProvider } from "theme-ui"
@@ -26,12 +26,16 @@ const Layout = props => {
     }
   `)
 
+  React.useEffect(() => {
+    console.log("mount")
+  }, [])
+
   return (
     <>
       {/* <Global /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <Transition {...props}>
-        <Container p="4">
+        <Container p="4" key={"container-" + props.location.pathname}>
           <main>{props.children}</main>
         </Container>
       </Transition>
