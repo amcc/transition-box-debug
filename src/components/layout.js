@@ -32,7 +32,6 @@ const Layout = props => {
 
   return (
     <>
-      {/* <Global /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <Transition {...props}>
         <Container p="4" key={"container-" + props.location.pathname}>
